@@ -1,0 +1,17 @@
+Step-up:
+    Create file structure
+    Annotate images:
+        mkdir ImageAnnotation
+            cd ImageAnnotation
+            git clone https://github.com/tzutalin/labelImg.git
+        pip install --upgrade pyqt5 lxml
+        cd into labelImg
+        pyrcc5 -o libs/resources.py resources.qrc
+        python labelImg.py
+    Separate images/xml
+    Create csv files running xml_to_csv
+        remember to change directory names
+    run train.py
+        remember to change image size
+    run predict.py
+        predict.py --input output\test_paths.txt
